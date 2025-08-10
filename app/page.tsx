@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -95,9 +94,9 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Why Choose Best Choice Flooring?
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We're committed to delivering exceptional results and customer satisfaction
-            </p>
+                      <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            We&apos;re committed to delivering exceptional results and customer satisfaction
+          </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -122,7 +121,7 @@ export default function Home() {
             Ready to Transform Your Space?
           </h2>
           <p className="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
-            Contact us today for a free consultation and estimate. Let's discuss how we can bring your vision to life.
+            Contact us today for a free consultation and estimate. Let&apos;s discuss how we can bring your vision to life.
           </p>
           <Link
             href="/contact"

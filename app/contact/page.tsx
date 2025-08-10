@@ -283,8 +283,8 @@ export default function Contact() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
-            Don't wait to transform your space. Contact us today for your free consultation 
-            and let's discuss your flooring project.
+            Don&apos;t wait to transform your space. Contact us today for your free consultation 
+            and let&apos;s discuss your flooring project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
