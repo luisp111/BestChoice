@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Footer from "../components/Footer";
 
 export default function Gallery() {
   const categories = [
@@ -41,15 +42,15 @@ export default function Gallery() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-slate-100">
       {/* Header */}
       <section className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
               Our Portfolio
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Explore our completed flooring projects and see the quality craftsmanship 
               that makes Best Choice Flooring the premier choice for your home.
             </p>
@@ -62,24 +63,24 @@ export default function Gallery() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {categories.map((category, categoryIndex) => (
             <div key={categoryIndex} className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              <h2 className="text-3xl font-bold text-slate-800 mb-8 text-center">
                 {category.name} Projects
               </h2>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {category.projects.map((project) => (
-                  <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                  <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-slate-200">
                     <div className="h-48 bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
                       <span className="text-6xl">{project.image}</span>
                     </div>
                     <div className="p-6">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-lg font-semibold text-slate-800 mb-2">
                         {project.title}
                       </h3>
-                      <p className="text-gray-600 text-sm mb-4">
+                      <p className="text-slate-600 text-sm mb-4">
                         {project.description}
                       </p>
-                      <button className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 px-4 rounded transition-colors">
+                      <button className="w-full bg-amber-700 hover:bg-amber-800 text-white font-medium py-2 px-4 rounded transition-colors">
                         View Details
                       </button>
                     </div>
@@ -95,31 +96,31 @@ export default function Gallery() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
               Transformations That Speak for Themselves
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               See the dramatic before and after results of our flooring installations
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-100 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Before</h3>
-              <div className="h-64 bg-gray-300 rounded flex items-center justify-center">
-                <span className="text-4xl text-gray-500">📷</span>
+            <div className="bg-slate-100 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-slate-800 mb-4 text-center">Before</h3>
+              <div className="h-64 bg-slate-300 rounded flex items-center justify-center">
+                <span className="text-4xl text-slate-500">📷</span>
               </div>
-              <p className="text-gray-600 text-center mt-4">
+              <p className="text-slate-600 text-center mt-4">
                 Old, worn-out flooring that needed replacement
               </p>
             </div>
             
             <div className="bg-amber-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">After</h3>
+              <h3 className="text-2xl font-bold text-slate-800 mb-4 text-center">After</h3>
               <div className="h-64 bg-amber-200 rounded flex items-center justify-center">
-                <span className="text-4xl text-amber-600">✨</span>
+                <span className="text-4xl text-amber-700">✨</span>
               </div>
-              <p className="text-gray-600 text-center mt-4">
+              <p className="text-slate-600 text-center mt-4">
                 Beautiful new flooring that transforms the entire space
               </p>
             </div>
@@ -128,7 +129,7 @@ export default function Gallery() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-amber-500">
+      <section className="py-16 bg-amber-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Inspired by Our Work?
@@ -140,19 +141,21 @@ export default function Gallery() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-white text-amber-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg text-lg transition-colors"
+              className="bg-white text-amber-700 hover:bg-slate-100 font-bold py-3 px-8 rounded-lg text-lg transition-colors"
             >
               Get Free Quote
             </Link>
             <Link
               href="/"
-              className="border-2 border-white text-white hover:bg-white hover:text-amber-600 font-bold py-3 px-8 rounded-lg text-lg transition-colors"
+              className="border-2 border-white text-white hover:bg-white hover:text-amber-700 font-bold py-3 px-8 rounded-lg text-lg transition-colors"
             >
               Back to Home
             </Link>
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 } 

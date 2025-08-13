@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Best Choice Flooring - Professional Flooring Solutions",
-  description: "Premium flooring installation and services. Hardwood, laminate, tile, and more. Transform your space with our expert craftsmanship.",
+  description: "Premium flooring installation backed by 20+ years of experience. Hardwood, laminate, tile, and more — your project gets the expert attention it deserves.",
 };
 
 export default function RootLayout({
